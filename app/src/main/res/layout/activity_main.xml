@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/get"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Get"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintRight_toLeftOf="@id/sync_get"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/sync_get"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SyncGet"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/get"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintRight_toLeftOf="@id/sync_get"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/get"/>
+
+    <Button
+        android:id="@+id/sync_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SyncDelete"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/get"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sync_get"/>
+
+    <Button
+        android:id="@+id/head"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Head"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintRight_toLeftOf="@id/sync_get"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/delete"/>
+
+    <Button
+        android:id="@+id/sync_head"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SyncHead"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/get"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sync_delete"/>
+
+    <Button
+        android:id="@+id/put"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Put"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintRight_toLeftOf="@id/sync_get"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head"/>
+
+    <Button
+        android:id="@+id/sync_put"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SyncPut"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/get"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sync_head"/>
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintRight_toLeftOf="@id/sync_get"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/put"/>
+
+    <Button
+        android:id="@+id/sync_post"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SyncPost"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/get"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sync_put"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/post"
+        android:max="100"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/progress">
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
