@@ -11,7 +11,7 @@ import static com.yakin.oktp.Oktp.Config;
 
 public class LogUtil {
 
-    private static String sTAG = "OkthLog";
+    private static String sTAG = "OktpLog";
 
     public static void e(String format, Object... args) {
         Log.e(sTAG, buildMessage(format, args));
